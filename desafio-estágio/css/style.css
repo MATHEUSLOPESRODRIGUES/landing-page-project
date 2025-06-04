@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&family=Vibur&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/PG-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.header-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: linear-gradient(to right, #131415bb, #13141597);
+}
+
+.slogan {
+    height: 480px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.slogan header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.slogan h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.slogan h2 span {
+    background-color: #F3AC39;
+    color: #131415;
+}
+
+.slogan #p2 {
+    color: #8C8D8D;
+    font-weight: 700;
+}
+
+.slogan p:last-child {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.slogan p sup {
+    font-size: 15px;
+}
+
+figure {
+    height: 410px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131415;
+    border: 10px solid #433c1572;
+    border-radius: 18px;
+}
+
+@keyframes float {
+    from {transform: translateY(-10px);}
+    to {transform: translateY(10px);}
+}
+
+button {
+    width: 650px;
+    height: 60px;
+    background-image: linear-gradient(to right, #F1BF11, #F22D59);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 750;
+    margin-top: 30px;
+    position: relative;
+    animation: 2s linear 1s infinite alternate-reverse float;
+}
+
+main {
+    height: 110vh;
+    width: 100%;
+    background-color: #131415;
+}
+
+.plus-points {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.plus-points article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    width: 400px;
+    height: 100px;
+    margin-top: 7%;
+}
+
+.plus-points article p {
+    color: #ababab;
+}
+
+.plus-points article img {
+    filter: brightness(200%);
+    filter: invert(100%);
+}
+
+.s-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    gap: 1rem;
+}
+
+.s-3 header, .s-3 article {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.s-3 header .s-3 article {
+    text-align: justify;
+}
+
+.s-3 article img {
+    filter: brightness(200%);
+    filter: invert(100%);
+}
+
+
