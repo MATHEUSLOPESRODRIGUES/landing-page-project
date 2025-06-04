@@ -13,17 +13,18 @@ body {
     background-image: url(../img/PG-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
 
-.header-1 {
+.initial {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-flow: row wrap;
-    background-image: linear-gradient(to right, #131415bb, #13141597);
+    flex-flow: row nowrap;
+    background-image: linear-gradient(to right, #131415bb, #131415b2);
 }
 
 .slogan {
@@ -93,20 +94,23 @@ button {
     font-size: 20px;
     font-weight: 750;
     margin-top: 30px;
-    position: relative;
     animation: 2s linear 1s infinite alternate-reverse float;
 }
 
 main {
-    height: 110vh;
+    height: 120vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     background-color: #131415;
 }
 
 .plus-points {
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
@@ -119,7 +123,7 @@ main {
     gap: 1rem;
     width: 400px;
     height: 100px;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .plus-points article p {
@@ -131,28 +135,46 @@ main {
     filter: invert(100%);
 }
 
-.s-3 {
-    width: 100%;
+.s3 {
+    width: 60%;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6%;
-    gap: 1rem;
+    flex-flow: row nowrap;
+    margin-top: 11%;
+    
 }
 
-.s-3 header, .s-3 article {
+.s3-main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.s3-main header {
+    width: 40%;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
 }
 
-.s-3 header .s-3 article {
-    text-align: justify;
+.s3 header h2 {
+    font-size: 30px;
 }
 
-.s-3 article img {
-    filter: brightness(200%);
-    filter: invert(100%);
+.s3-main .rules {
+    display: flex;
+    gap: 3rem;
+    margin-top: 10%;
 }
 
+.s3-main .rules article {
+    width: 40%;
+    display: flex;
+    align-items: start;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.s3-main .rules article h3 {
+    font-weight: 500;
+}
 
